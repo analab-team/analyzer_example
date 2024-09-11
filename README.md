@@ -2,13 +2,13 @@
 Repo with len input/output analyzer.
 
 
-# PROD BUILD
+## PROD BUILD
 1. Создайте файл .env из примера .env.example и заполните его.
 2. Развертывание: `source docker/deploy.sh up`
 3. Добавить анализатор в основной сервис через метод `/admin/add_analyzer`
 
 
-# DEV BUILD
+## DEV BUILD
 1. `conda create -n lh_len_analyzer python=3.11`
 2. `conda activate lh_len_analyzer`
 3. `pip install -r requirements/dev.txt`
@@ -18,7 +18,7 @@ Repo with len input/output analyzer.
 Для локального тестирования использовать: `source docker/deploy.sh up`
 
 
-# Указания к разработке
+## Указания к разработке
 Каждый анализатор может иметь на `/analyzer/input`, так и `analyzer/output` методы.
 
 1. Вам необходимо создать модель [Vault](./app/models/vault.py) — данные, которые необходимо добавить пользователю для работы анализатора:
